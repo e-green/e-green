@@ -2,13 +2,24 @@ import React from 'react';
 import { MenuIcon, XIcon } from '@heroicons/react/solid'
 import { Transition } from '@headlessui/react'
 import { Link } from 'gatsby';
-import { motion } from "framer-motion"
+import { AnimatePresence, motion, useAnimation } from "framer-motion"
+import { useInView } from 'react-intersection-observer';
 
 const PageLayout = ({ children }) => {
     const [menuOpen, setMenuOpen] = React.useState(false);
+    const controls = useAnimation();
+    const [ref, inView] = useInView();
+
+    React.useEffect(() => {
+        if (inView) {
+            controls.start("visible");
+        }
+    }, [controls, inView]);
 
     return (
-        <main className=" w-full h-screen flex flex-col bg-web">
+        <main
+
+            className=" w-full h-screen flex flex-col bg-web">
             <nav className="h-12 w-full  mb-12 md:mb-0 bg-black bg-opacity-5 shadow-xl px-2 py-2 flex flex-row justify-between">
                 <div className="text-gray-200 object-center text-xl cursor-pointer">
                     <Link to="/">
@@ -56,21 +67,23 @@ const PageLayout = ({ children }) => {
                     hover:bg-gray-900 transition-all cursor-pointer"> <Link to="/services/">Services  </Link></span>
                 </nav>
             </Transition>
-            <div class="w-full mt-auto mb-auto justify-self-center grid justify-items-stretch">
-                    <motion.main
-                        initial={{ opacity: 0, x: -200 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        exit={{ opacity: 0, x: 200 }}
-                        transition={{
-                            type: "spring",
-                            mass: 0.35,
-                            stiffness: 75,
-                            duration: 0.3
-                        }}
-                    >
-                        {children}
-                    </motion.main>
-            </div>
+            <AnimatePresence>
+                <motion.div
+                    ref={ref}
+                    animate={controls}
+                    initial="hidden"
+                    transition={{ duration: 0.3 }}
+                    variants={{
+                        visible: { opacity: 1, scale: 1 },
+                        hidden: { opacity: 0, scale: 0 }
+                    }}
+
+                    class="m-auto justify-self-center grid justify-items-stretch">
+
+                    {children}
+
+                </motion.div>
+            </AnimatePresence>
         </main>
     );
 }
