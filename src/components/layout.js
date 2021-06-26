@@ -41,7 +41,7 @@ const PageLayout = ({ children }) => {
                         <Link to="/contact/">Contact us</Link></span>
                     <span className="px-2 py-2 border-b-2 border-transparent  transition duration-500 uppercase font-light
                      text-gray-100 hover:text-green-300 hover:border-green-200 hover:font-bold cursor-pointer">
-                        <Link to="/projects/">Projects  </Link></span>
+                        <Link to="/career/">Career  </Link></span>
                     <span className="px-2 py-2 border-b-2 border-transparent  transition duration-500 uppercase font-light
                      text-gray-100 hover:text-green-300 hover:border-green-200 hover:font-bold cursor-pointer">
                         <Link to="/services/">Services  </Link></span>
@@ -62,7 +62,7 @@ const PageLayout = ({ children }) => {
                     <span className="py-3 px-1 uppercase font-light text-sm text-gray-100 hover:text-green-300
                     hover:bg-gray-900 transition-all cursor-pointer"> <Link to="/contact/">Contact us</Link></span>
                     <span className="py-3 px-1 uppercase font-light text-sm text-gray-100 hover:text-green-300
-                    hover:bg-gray-900 transition-all cursor-pointer"> <Link to="/projects/">Projects  </Link></span>
+                    hover:bg-gray-900 transition-all cursor-pointer">   <Link to="/career/">Career  </Link></span>
                     <span className="py-3 px-1 uppercase font-light text-sm text-gray-100 hover:text-green-300
                     hover:bg-gray-900 transition-all cursor-pointer"> <Link to="/services/">Services  </Link></span>
                 </nav>

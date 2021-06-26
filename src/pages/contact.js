@@ -5,29 +5,29 @@ import { PhoneIcon, MailIcon } from '@heroicons/react/solid'
 const ContactPage = () => {
     return (
         <PageLayout>
-            <div class="justify-self-center mb-auto mt-auto grid justify-items-center md:w-1/3">
+            <div class="justify-self-center mb-auto mt-auto grid justify-items-center w-1/2">
 
                 <div className={"px-4"}>
                     <h1 className={"text-white text-xl mb-3"}>
                         Contact us
                     </h1>
 
-                    <div className="grid grid-cols-12 gap-2 ml-2 text-gray-50 w-full">
-                        <div className="col-span-1 flex justify-between">
-                            <PhoneIcon class="w-4 h-4 self-center  text-gray-100" />
+                    <div class="flex items-center space-x-3 text-gray-100 w-1/5">
+                        <div>
+                            <PhoneIcon class="w-4 h-4 self-center  text-3xl align-middle  text-gray-100" />
                         </div>
-                        <div className="col-span-11">
-                            +(94) 767737845
+                        <div>
+                            +94767-737-845
                         </div>
+                    </div>
 
-                        <div className="col-span-1 flex justify-between">
-                            <MailIcon class="w-4 h-4 self-center text-gray-100" />
+                    <div class="flex items-center space-x-3 text-gray-100">
+                        <div>
+                            <MailIcon class="w-4 h-4 self-center  text-3xl align-middle  text-gray-100" />
                         </div>
-                        <div className="col-span-11">
+                        <div>
                             info@egreen.io
                         </div>
-
-
                     </div>
                 </div>
             </div>
