@@ -1,6 +1,5 @@
-import * as React from "react"
+import * as React from "react";
 import PageLayout from "../components/layout";
-import { PhoneIcon, MailIcon } from '@heroicons/react/solid'
 
 const ServicesPage = () => {
     return (

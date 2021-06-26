@@ -1,7 +1,6 @@
 import * as React from "react"
-import EgreenLogo from '../images/EgreenLogo@0.5x.png'
 import PageLayout from "../components/layout"
-import { AnimatePresence, AnimateSharedLayout, motion } from "framer-motion"
+import EgreenLogo from '../images/EgreenLogo@0.5x.png'
 
 // markup
 const IndexPage = () => {
