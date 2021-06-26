@@ -32,19 +32,19 @@ const PageLayout = ({ children }) => {
                     {menuOpen && <XIcon className="h-5 w-5 text-blue-500 inline-block align-middle" onClick={() => setMenuOpen(!menuOpen)} />}
                 </div>
                 <div className="hidden md:block">
-                    <span className="px-2 py-2 border-b-2 border-transparent  transition duration-500 uppercase font-light
+                    <Link to="/about">   <span className="px-2 py-2 border-b-2 border-transparent  transition duration-500 uppercase font-light
                      text-gray-100 hover:text-green-300 hover:border-green-200 hover:font-bold cursor-pointer">
-                        <Link to="/about">About us  </Link>
-                    </span>
-                    <span className="px-2 py-2 border-b-2 border-transparent  transition duration-500 uppercase font-light
+                        About us
+                    </span></Link>
+                    <Link to="/contact/">   <span className="px-2 py-2 border-b-2 border-transparent  transition duration-500 uppercase font-light
                      text-gray-100 hover:text-green-300 hover:border-green-200 hover:font-bold cursor-pointer">
-                        <Link to="/contact/">Contact us</Link></span>
-                    <span className="px-2 py-2 border-b-2 border-transparent  transition duration-500 uppercase font-light
+                        Contact us</span></Link>
+                    <Link to="/career/">      <span className="px-2 py-2 border-b-2 border-transparent  transition duration-500 uppercase font-light
                      text-gray-100 hover:text-green-300 hover:border-green-200 hover:font-bold cursor-pointer">
-                        <Link to="/career/">Career  </Link></span>
-                    <span className="px-2 py-2 border-b-2 border-transparent  transition duration-500 uppercase font-light
+                        Career  </span></Link>
+                    <Link to="/services/">    <span className="px-2 py-2 border-b-2 border-transparent  transition duration-500 uppercase font-light
                      text-gray-100 hover:text-green-300 hover:border-green-200 hover:font-bold cursor-pointer">
-                        <Link to="/services/">Services  </Link></span>
+                        Services </span> </Link>
                 </div>
             </nav>
             <Transition
@@ -57,14 +57,14 @@ const PageLayout = ({ children }) => {
                 leaveTo="opacity-0"
             >
                 <nav className="h-12 w-full absolute top-12 transition duration-500 bg-white shadow-xl px-2 bg-opacity-5 flex justify-between">
-                    <span className="py-3 px-1 uppercase font-light text-sm text-gray-100 hover:text-green-300
-                    hover:bg-gray-900 transition-all cursor-pointer"><Link to="/about/">About us  </Link></span>
-                    <span className="py-3 px-1 uppercase font-light text-sm text-gray-100 hover:text-green-300
-                    hover:bg-gray-900 transition-all cursor-pointer"> <Link to="/contact/">Contact us</Link></span>
-                    <span className="py-3 px-1 uppercase font-light text-sm text-gray-100 hover:text-green-300
-                    hover:bg-gray-900 transition-all cursor-pointer">   <Link to="/career/">Career  </Link></span>
-                    <span className="py-3 px-1 uppercase font-light text-sm text-gray-100 hover:text-green-300
-                    hover:bg-gray-900 transition-all cursor-pointer"> <Link to="/services/">Services  </Link></span>
+                    <Link to="/about/" className="py-3 px-1 uppercase font-light text-sm text-gray-100 hover:text-green-300
+                    hover:bg-gray-900 transition-all cursor-pointer">   <span >About us </span> </Link>
+                    <Link to="/contact/"  className="py-3 px-1 uppercase font-light text-sm text-gray-100 hover:text-green-300
+                    hover:bg-gray-900 transition-all cursor-pointer">   <span>Contact us</span> </Link>
+                    <Link to="/career/"  className="py-3 px-1 uppercase font-light text-sm text-gray-100 hover:text-green-300
+                    hover:bg-gray-900 transition-all cursor-pointer">     <span>  Career </span> </Link>
+                    <Link to="/services/"  className="py-3 px-1 uppercase font-light text-sm text-gray-100 hover:text-green-300
+                    hover:bg-gray-900 transition-all cursor-pointer">   <span>Services </span> </Link>
                 </nav>
             </Transition>
             <AnimatePresence>

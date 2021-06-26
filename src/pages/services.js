@@ -9,7 +9,7 @@ const ServicesPage = () => {
                     <h1 className={"text-white text-xl mb-3"}>
                         Services
                     </h1>
-                    <div class="text-gray-100 ml-4 grid grid-cols-2 gap-8 text-justify">
+                    <div class="text-gray-100 ml-4 grid grid-cols-1 md:grid-cols-2 gap-8 text-justify">
                         <div>
                             <h4 class="text-xl">Application Development</h4>
                             <p class="mt-2 font-light">
