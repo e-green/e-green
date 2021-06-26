@@ -12,7 +12,7 @@ const ContactPage = () => {
                         Contact us
                     </h1>
 
-                    <div className="grid grid-cols-12 gap-2 ml-2 text-gray-50">
+                    <div className="grid grid-cols-12 gap-2 ml-2 text-gray-50 w-full">
                         <div className="col-span-1 flex justify-between">
                             <PhoneIcon class="w-4 h-4 self-center  text-gray-100" />
                         </div>

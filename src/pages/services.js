@@ -13,9 +13,9 @@ const ServicesPage = () => {
                     <div class="text-gray-100 ml-4 grid grid-cols-2 gap-8 text-justify">
                         <div>
                             <h4 class="text-xl">Application Development</h4>
-                            <p class="mt-2 font-light">Our core business is developing custom and fully interactive software application.
-                                We will develop your company's branding identity,
-                                if it already doesn't have one, and integrate a custom design around it.</p>
+                            <p class="mt-2 font-light">
+                                Our core business is developing custom and fully interactive software applications. We will develop your company's branding identity and integrate a custom design around it.
+                            </p>
                         </div>
 
                         <div>

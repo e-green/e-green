@@ -11,17 +11,15 @@ const AboutUsPage = () => {
                             <span className={"font-bold"}> we are </span>
                         </h1>
                         <p className={"text-gray-200 text-justify font-medium"}>
-                            In 2014 founder and CEO Dewmal start E-Green Software Company to set out to revolutionize enterprise IT.
-                            Today E-Green is the company that provides a comprehensive, open source ecosystem platform for the
-                            connected business.
-                            We are created creative, valuable software to global world for their business.
-
-                            E-Green strives to offer the best solution for your business and impartial advice at an honest price.
-                            We are constantly investigating new technologies and recommend them when they make sense.
-
-                            Whether it's website or graphic design, system development or custom programming we
-                            like to keep everything under
-                            one roof to make it easier for our customers.
+                            E-Green  was founded in 2014 with the objective to provide software solutions
+                             to business needs. Today, E-Green is a company that provides a 
+                             comprehensive, open source ecosystem platform for the connected business. 
+                             We have created creative, valuable software for customers' business. 
+                             E-Green strives to offer the best solution for your business and impartial 
+                             advice at an honest price. We are constantly investigating new technologies 
+                             and recommend them when they make sense. Whether it's website or graphic design, 
+                             system development or custom programming we like to keep everything 
+                             under one roof to make it easier for our customers.
                         </p>
                     </div>
                 </div>

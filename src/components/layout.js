@@ -19,7 +19,7 @@ const PageLayout = ({ children }) => {
     return (
         <main
 
-            className=" w-full h-screen flex flex-col bg-web">
+            className=" w-full min-h-screen flex flex-col bg-web font-sans">
             <nav className="h-12 w-full  mb-12 md:mb-0 bg-black bg-opacity-5 shadow-xl px-2 py-2 flex flex-row justify-between">
                 <div className="text-gray-200 object-center text-xl cursor-pointer">
                     <Link to="/">
