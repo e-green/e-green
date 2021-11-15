@@ -4,5 +4,11 @@
 @tailwind utilities;
 
 .bg-web{
-    background-color: #01000c;
+    background-color: #01000c;    
+  animation: bg-web-move 5s infinite;
 }
+
+@keyframes bg-web-move {
+    from {background-color: #01000c;}
+    to {background-color: #070166;}
+  }
