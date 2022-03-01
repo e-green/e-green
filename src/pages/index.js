@@ -33,7 +33,6 @@ const IndexPage = () => {
                     <li></li>
                     <li></li>
                 </ul>
-
             </div>
         </PageLayout>
     )
